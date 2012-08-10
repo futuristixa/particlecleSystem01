@@ -10,13 +10,13 @@ class ParticlePosition {
  
     float angleAdd = 360 / particles.size();
     float angle = 0;
-    float radius = width * 0.2;
  
     for ( int i = particles.size()-1; i >= 0; i--) { 
  
       Particle particle = ( Particle ) particles.get(i);
  
       float rad = radians( angle ) + ( millis()/10000.0 );
+      float radius = ( width * 0.2 ) * ( sin( millis()/10.0 ) );
       particle.p.x = centerX + ( radius * cos(rad) );
       particle.p.y = centerY + ( radius * sin(rad) );
  
