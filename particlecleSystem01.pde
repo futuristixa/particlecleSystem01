@@ -1,5 +1,4 @@
 import processing.opengl.*;
-import controlP5.*;
 
 //particles
 ArrayList particles;

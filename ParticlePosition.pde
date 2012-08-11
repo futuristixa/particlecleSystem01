@@ -16,7 +16,7 @@ class ParticlePosition {
       Particle particle = ( Particle ) particles.get(i);
  
       float rad = radians( angle ) + ( millis()/10000.0 );
-      float radius = ( width * 0.2 ) * ( sin( millis()/10.0 ) );
+      float radius = ( width * 0.2 ) * ( sin( millis()/1000.0 ) );
       particle.p.x = centerX + ( radius * cos(rad) );
       particle.p.y = centerY + ( radius * sin(rad) );
  
